@@ -20,6 +20,8 @@ namespace app2._0.Controllers
         public IActionResult Index()
         {
             string dbConn2 = configuration.GetValue<string>("MySettings:DbConnection");
+            string av = DbConnection;
+            string ac = Environment.DbConnection;
             ViewBag.a = dbConn2;
             return View();
         }
